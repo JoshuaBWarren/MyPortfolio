@@ -221,6 +221,12 @@ button {
   border-radius: 0;
 }
 
+.findme {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
 button:focus {
   outline: 1px dotted;
   outline: 5px auto -webkit-focus-ring-color;
@@ -7935,7 +7941,7 @@ button.bg-dark:focus {
 
   .mb-sm-0,
 .my-sm-0 {
-    margin-bottom: 0 !important;
+    margin-bottom: 1.5rem !important;
   }
 
   .ml-sm-0,
@@ -8786,12 +8792,12 @@ button.bg-dark:focus {
 }
 @media (min-width: 992px) {
   .m-lg-0 {
-    margin: 0 !important;
+    margin: 1.5rem !important;
   }
 
   .mt-lg-0,
 .my-lg-0 {
-    margin-top: 0 !important;
+    margin-top: 1.5rem !important;
   }
 
   .mr-lg-0,
@@ -8801,7 +8807,7 @@ button.bg-dark:focus {
 
   .mb-lg-0,
 .my-lg-0 {
-    margin-bottom: 0 !important;
+    margin-bottom: 1.5rem !important;
   }
 
   .ml-lg-0,
@@ -10132,7 +10138,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/business.jpg");
+  background-image: url("../assets/img/siteimage/business.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -10228,7 +10234,7 @@ header.masthead .masthead-heading {
 .portfolio-modal .modal-content {
   padding-top: 6rem;
   padding-bottom: 6rem;
-  text-align: center;
+  text-align: left;
 }
 .portfolio-modal .modal-content h2 {
   font-size: 3rem;
@@ -10444,7 +10450,7 @@ header.masthead .masthead-heading {
 
 section#contact {
   background-color: #212529;
-  background-image: url("../assets/img/map-image.png");
+  background-image: url("../assets/img/siteimage/map-image.png");
   background-repeat: no-repeat;
   background-position: center;
 }

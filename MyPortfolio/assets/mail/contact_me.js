@@ -28,6 +28,7 @@ $(function () {
                     phone: phone,
                     email: email,
                     message: message,
+                    submit: 1
                 },
                 cache: false,
                 success: function () {

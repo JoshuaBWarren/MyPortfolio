@@ -9,6 +9,17 @@
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- RUM (Real User Metrics) script to measure and track the performance of the site-->
+        <script>
+            'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd &&
+                (window._trfd=[]),_trfd.push(
+
+                {'tccl.baseHost':'$BASEHOST'}),_trfd.push(
+
+                {'ap':'$AP'},{'server':'$HOSTNAME'},{'id':'$ID'})
+            // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.
+        </script>
+        <script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
@@ -18,42 +29,47 @@
     </head>
     <body id="page-top">
 
-        <div class="container style= float-right">
+        <div class="findme" style="float: right;" >
             <br>
             <div class="text-xl-right">
-                <a class="btn btn-dark btn-social mx-2" href="https://github.com/JoshuaBWarren" target="_blank">
+                <a class="btn btn-dark btn-social mx-1" href="https://github.com/JoshuaBWarren" target="_blank">
                     <i class="fab fa-github fa-lg"></i></a>
-                <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/joshbwarren/" target="_blank">
+                <a class="btn btn-dark btn-social mx-1" href="https://www.linkedin.com/in/joshbwarren/" target="_blank">
                     <i class="fab fa-linkedin-in fa-lg"></i></a>
-                <a class="btn btn-dark btn-social mx-2" href="mailto:warrenjb86@live.com" target="_blank">
+                <a class="btn btn-dark btn-social mx-1" href="mailto:warrenjb86@live.com" target="_blank">
                     <i class="fas fa-envelope-open fa-lg"></i></a>
+                <a class="btn btn-dark btn-social mx-1" href="https://drive.google.com/file/d/10xU_bdPvJB0BSPK5ppn48HFqhnZRUenq/view?usp=sharing" target="_blank">
+                    <i class="fas fa-file fa-lg"></i></a>
             </div>
         </div>
 
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading">Joshua Warren</div>
-                <div class="masthead-heading text-uppercase">Program Manager</div>
+                <div class="masthead-subheading">Joshua Warren, PMP, CSM</div>
+                <div class="masthead-heading text-uppercase">Project Manager</div>
                 <h5 class="section-subheading" style="margin-top: -30px;"><i>Based in Federal Way, Washington</i></h5>
             </div>
         </header>
 
-        <!-- Portfolio Grid-->
+        <!-- ============================================================================================== Portfolio Grid ============================================================================================== -->
+
+        <!-- Title -->
         <section class="page-section bg-light" id="portfolio">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Past projects worked on or completed</h3>
+                    <h3 class="section-subheading text-muted">View my past projects below!</h3>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Pathfinder -->
+                    <div class="col-lg-4 col-sm-12 mb-4">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-toggle="modal" href="#PathfinderModal"
                                 ><div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/migrating_projects.png" alt=""
+                                <img class="img-fluid" src="assets/img/portfoliomodalimage/PathfinderImageFile.png" alt=""
                             /></a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Pathfinder</div>
@@ -61,13 +77,14 @@
                             </div>
                         </div>
                     </div>
+                    <!-- NHO Playbook -->
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-toggle="modal" href="#NHOModal"
                                 ><div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/amazon nho.jpg" alt=""
+                                <img class="img-fluid" src="assets/img/portfoliomodalimage/amazon nho.jpg" alt=""
                             /></a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">The New Hire Orientation (NHO) Playbook</div>
@@ -75,13 +92,14 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Delridge Community Program -->
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-toggle="modal" href="#DelridgeModal"
                                 ><div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/employee-training-program-featured.png" alt=""
+                                <img class="img-fluid" src="assets/img/portfoliomodalimage/employee-training-program-featured.png" alt=""
                             /></a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Delridge Community Program</div>
@@ -89,13 +107,14 @@
                             </div>
                         </div>
                     </div>
+                    <!-- 2019 Computer Science Internship -->
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-toggle="modal" href="#InternshipModal"
                                 ><div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/comp-sci.jpg" alt=""
+                                <img class="img-fluid" src="assets/img/portfoliomodalimage/comp-sci.jpg" alt=""
                             /></a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">2019 Computer Science Internship</div>
@@ -103,13 +122,14 @@
                             </div>
                         </div>
                     </div>
+                    <!-- CK Employee Website -->
                     <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-toggle="modal" href="#CKEmployeeWebsiteModal"
                                 ><div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/ckwebsite.jpg" alt=""
+                                <img class="img-fluid" src="assets/img/portfoliomodalimage/ckwebsitedesign.jpg" alt=""
                             /></a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">CK Employee Website</div>
@@ -117,13 +137,14 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Onsite Tech Training Program -->
                     <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-toggle="modal" href="#BCTrainingProgramModal"
                                 ><div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/biomedical.jpg" alt=""
+                                <img class="img-fluid" src="assets/img/portfoliomodalimage/biomedical.jpg" alt=""
                             /></a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Onsite Calibration Technican Training Program</div>
@@ -131,13 +152,14 @@
                             </div>
                         </div>
                     </div>
+                    <!-- GBS Antenna Replacement -->
                     <div class="col-lg-4 col-sm-6">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-toggle="modal" href="#GBSModal"
                                 ><div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/uss enterprise.jpg" alt=""
+                                <img class="img-fluid" src="assets/img/portfoliomodalimage/uss enterprise.jpg" alt=""
                             /></a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Global Broadcast Service (GBS) Antenna Replacement</div>
@@ -149,14 +171,15 @@
             </div>
         </section>
 
-        <!-- About-->
+        <!-- ============================================================================================== About ============================================================================================== -->
         <section class="page-section" id="about">
-            <div class="container">
+            <div class="container" style="max-width: 1500px;">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">About</h2>
                     <h3 class="section-subheading text-muted">Work history</h3>
                 </div>
                 <ul class="timeline">
+                    <!-- Microsoft -->
                     <li>
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/microsoft.jpg" alt="" /></div>
                         <div class="timeline-panel">
@@ -164,12 +187,13 @@
                                 <h4>2020 - 2021</h4>
                                 <h4 class="subheading">Microsoft</h4>
                             </div>
-                            <div class="timeline-body">
+                            <div class="card-body">
                                 <p class="text-muted">
-                                    Currently working for Microsoft via Neal Analytic's doing business and project management.
+                                    Joshua is currently working for Microsoft via Neal Analytic's doing business and project management.
                                 </p></div>
                         </div>
                     </li>
+                    <!-- Amazon -->
                     <li class="timeline-inverted">
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/amazon.jpeg" alt="" /></div>
                         <div class="timeline-panel">
@@ -181,13 +205,14 @@
                                 <p class="text-muted">
                                     The Global Learning and Development (GLD) New Hire Oriention (NHO) team needed a platform designed 
                                     to provide a, "one stop shop" location for all things NHO. The goal was to allow for all NHO site locations 
-                                    to have a source of information to create a standardized, "Day 1" experience. <br> Joshua chose 
+                                    to have a source of information to create a standardized, "Day 1" experience. <br><br> Joshua chose 
                                     to use SharePoint and created the entire site from the ground up. He managed permissions, created 
                                     and maintained Document Libraries, and subsites for other NHO locations to house their own information. 
-                                    <br> During this time he also communicated, updated, and maintained team Wiki's.
+                                    <br><br> During this time he also communicated, updated, and maintained team Wiki's.
                                 </p></div>
                         </div>
                     </li>
+                    <!-- Computing Kids -->
                     <li>
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/ck.png" alt="" /></div>
                         <div class="timeline-panel">
@@ -196,17 +221,19 @@
                                 <h4 class="subheading">Computing Kids</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">Joshua was first hired on to be the Teacher Supervisor. He trained, mentored, and 
+                                <p class="text-muted">
+                                    Joshua was first hired on to be the Teacher Supervisor. He trained, mentored, and 
                                     gave support to teachers who travel to different school systems in the Seattle area to teach kids how 
                                     to code. He was also responsible for the creation and maintance of the programs and materials used to 
-                                    include HTML/CSS, JavaScript, Java, and Python. <br> Next, he was promoted to Technical Project Manager 
+                                    include HTML/CSS, JavaScript, Java, and Python. <br><br> Next, he was promoted to Technical Project Manager 
                                     where he worked with multiple software development teams internationally to address issues and improve 
-                                    quality. <br> Lastly, he was responsible for the advertising and hiring of Computer Science students at 
+                                    quality. <br><br> Lastly, he was responsible for the advertising and hiring of Computer Science students at 
                                     the University of Washington - Bothel taking their Master's in Computer Science program to participate 
                                     in an internship for school credits.
                                 </p></div>
                         </div>
                     </li>
+                    <!-- Fukda Denshi -->
                     <li class="timeline-inverted">
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/fukuda.jpg" alt="Patient Monitors" /></div>
                         <div class="timeline-panel">
@@ -222,6 +249,7 @@
                                 </p></div>
                         </div>
                     </li>
+                    <!-- Cyan Swim Academy -->
                     <li>
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/pool.jpg" alt="Swimming Pool" /></div>
                         <div class="timeline-panel">
@@ -233,13 +261,14 @@
                                 <p class="text-muted">
                                     Joshua joined this company weeks before they opened and created their social presence on 
                                     Google Maps and creating/managing their social media accounts to include Facebook, Twitter, 
-                                    and Yelp!. <br> He managed the onboarding and training of all new employees for the company 
+                                    and Yelp!. <br><br> He managed the onboarding and training of all new employees for the company 
                                     as well as independent contractors to whom provided necessary services to the pool and 
-                                    building. <br> Either leading or participating, he provided feedback on business related 
+                                    building. <br><br> Either leading or participating, he provided feedback on business related 
                                     topics and issues. 
                                 </p></div>
                         </div>
                     </li>
+                    <!-- BC Group Intl. -->
                     <li class="timeline-inverted">
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/bcgroup.jpg" alt="Biomedical Devices" /></div>
                         <div class="timeline-panel">
@@ -251,16 +280,17 @@
                                 <p class="text-muted">
                                     His first job after the Navy, Joshua was first hired as an Onsite 
                                     Calibration Technician. His job was to travel to hospital sites all over the United States 
-                                    to provide calibration and repair services. <br> Joshua provided expertise with biomedical 
-                                    issues and problems while assisting the hospital teams with their equipment needs. <br> 
+                                    to provide calibration and repair services. <br><br> Joshua provided expertise with biomedical 
+                                    issues and problems while assisting the hospital teams with their equipment needs. <br><br> 
                                     Joshua was then promoted to Onsite Coordinator to help and assist with the planning and 
-                                    coordination of Onsite Technicians <br> During his time with BC Group, Joshua identified the 
+                                    coordination of Onsite Technicians <br><br> During his time with BC Group, Joshua identified the 
                                     need for a training program to better prepare and train incomming new Calibration Technicians. 
-                                    <br> Affectionately dubbed the, "How-to BC" training program, Joshua reduced the uptime from 
+                                    <br><br> Affectionately dubbed the, "How-to BC" training program, Joshua reduced the uptime from 
                                     hire to hospital sites by 50%.
                                 </p></div>
                         </div>
                     </li>
+                    <!-- USN -->
                     <li>
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/smallcvn65.jpg" alt="USS Enterprise" /></div>
                         <div class="timeline-panel">
@@ -273,14 +303,15 @@
                                     Joining in August of 2006, Joshua graduated from bootcamp in October of the 
                                     same here. With the designation of Electronics Technician (ET), he completed A-school in 
                                     Great Lakes, Illinois before transfering to Norfolk, VA to serve onboard the USS Enterprise 
-                                    (CVN - 65). <br> His expertise was in External Communications where he maintained and repaired 
+                                    (CVN - 65). <br><br> His expertise was in External Communications where he maintained and repaired 
                                     the WSC-3 UHF Transceiver radio systems as well as the SATCOM UHF Radio systems equating to 
                                     millions of dollars. He was also solely responsiple for the SINCGARS and GRC-211 radio 
-                                    systems. <br> Joshua was the Senior Technician of his division where he was responsible 
+                                    systems. <br><br> Joshua was the Senior Technician of his division where he was responsible 
                                     for the training of incoming ET's as well as leading teams of junior Sailors.
                                 </p></div>
                         </div>
                     </li>
+                    <!-- Last bubble on the timeline -->
                     <li class="timeline-inverted">
                         <div class="timeline-image">
                             <h4>Be Part<br />Of The<br />Story!</h4>
@@ -290,33 +321,69 @@
             </div>
         </section>
 
-        <!-- Contact-->
+
+<section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Accomplishments</h2>
+                    <h3 class="section-subheading text-muted">View my previous accomplishments below!</h3>
+                </div>
+                <div class="row">
+                    <!-- PMP -->
+                    <div class="col-lg-4 col-sm-12 mb-4">
+                        <div class="portfolio-item">
+                                <img class="img-fluid" src="assets\img\accomplishments\pmp-600px.png" alt=""/>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Projct Management Professional (PMP)</div>
+                                <div class="portfolio-caption-subheading text-muted">Project Management Institute</div>
+                                <div class="portfolio-caption-subheading text-muted">Credential #: 2995904</div>
+                                <br>
+                                <p>Earned April 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CSM -->
+                    <div class="col-lg-4 col-sm-12 mb-4">
+                        <div class="portfolio-item">
+                                <img class="img-fluid" src="assets\img\accomplishments\seal-csm.png" alt=""/>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Projct Management Professional (PMP)</div>
+                                <div class="portfolio-caption-subheading text-muted">Project Management Institute</div>
+                                <div class="portfolio-caption-subheading text-muted">Credential #: 000881400</div>
+                                <br>
+                                <p>Earned January 2019</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+</section>
+
         <section class="page-section" id="contact">
             <div class="container">
-                <!-- 
+                
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading text-uppercase">Contact Me!</h2>
+                    <h3 class="section-subheading" style="color: white;">If you think I'd make a great fit at your company or on your project team, drop me a line!</h3>
                 </div>
-                <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                <form id="contactForm" name="sentMessage" method="post" action="contact_me.php">
                     <div class="row align-items-stretch mb-5">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name." />
+                                <input class="form-control" id="name" name="name" type="text" placeholder="Your Name *" required data-validation-required-message="Please enter your name." />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address." />
+                                <input class="form-control" id="email" name="email" type="email" placeholder="Your Email *" required data-validation-required-message="Please enter your email address." />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="form-group mb-md-0">
-                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number." />
+                                <input class="form-control" id="phone" name="phone" type="tel" placeholder="Your Phone" />
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group form-group-textarea mb-md-0">
-                                <textarea class="form-control" id="message" placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
+                                <textarea class="form-control" id="message" name="message" placeholder="Your Message *" required data-validation-required-message="Please enter a message."></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
@@ -326,32 +393,36 @@
                         <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Send Message</button>
                     </div>
                 </form>
-                -->
+                
             </div>
         </section>
+
         <!-- Footer-->
         <footer class="footer py-4">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-4 text-lg-left">Copyright © joshuabwarren.com 2020</div>
-                    <div class="col-lg-4 my-3 my-lg-0">
-                        <a class="btn btn-dark btn-social mx-2" href="https://github.com/JoshuaBWarren" target="_blank">
-                            <i class="fab fa-github"></i></a>
+                        <div class="col-lg-4 my-3 my-lg-0">
+                            <a class="btn btn-dark btn-social mx-2" href="https://github.com/JoshuaBWarren" target="_blank">
+                                <i class="fab fa-github"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/joshbwarren/" target="_blank">
                                 <i class="fab fa-linkedin-in fa-lg"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="mailto:warrenjb86@live.com" target="_blank">
                                 <i class="fas fa-envelope-open fa-lg"></i></a>
-                    </div>
+                            <a class="btn btn-dark btn-social mx-1" href="https://drive.google.com/file/d/10xU_bdPvJB0BSPK5ppn48HFqhnZRUenq/view?usp=sharing" target="_blank">
+                                <i class="fas fa-file fa-lg"></i></a>
+                        </div>
                     <!-- <div class="col-lg-4 text-lg-right">
                         <a class="mr-3" href="#!">Privacy Policy</a>
                         <a href="#!">Terms of Use</a>
                     </div> -->
+                    </div>
                 </div>
             </div>
         </footer>
 
 
-        <!-- Portfolio Modals-->
+        <!-- ============================================================================================== Portfolio Modals ============================================================================================== -->
         <!-- Modal 1: Microsoft BM -->
         <div class="portfolio-modal modal fade" id="PathfinderModal" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
@@ -363,18 +434,74 @@
                                 <div class="modal-body">
                                     <!-- Project Details Go Here-->
                                     <h2 class="text-uppercase">Pathfinder</h2>
-                                    <p class="item-intro text-muted">Project migration from Silo's and ADO</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/MS_Power_Apps.jpg" alt="" />
+                                    <p class="item-intro text-muted">Project Exodus</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/insidemodalimage/MS_Power_Apps.jpg" alt="" />
                                     <p>
-                                        Leading and managing the migration of all projects within the org into Pathfinder.
-                                    </p>
+                                        Pathfinder is a Power Platform based application designed to enable a single source of truth for Portfolios, Programs, Projects, and Change 
+                                        Management. Certain benefits include:
+                                            <ul>
+                                                <li>Rapid prototyping and development</li>
+                                                <li>Personalization capabilities</li>
+                                                <li>One intake point for multiple types of work</li>
+                                                <li>Portfolio view of top-level initiatives</li>
+                                                <li>Allows teams to manage their work in their tools (like Azure Dev Ops or ADO)</li>
+                                            </ul>
 
-                                    <ul class="list-inline">
-                                        <li>Date: August 2020 to February 2021</li>
-                                        <li>Client: Microsoft</li>
-                                        <li>Category: Business</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fas fa-times mr-1"></i>Close Project</button>
+                                        The gist of the project was that the organization had projects and work being tracked and ran from various sources and silo's. There wasn't a, 
+                                        "single source of truth", where one could go to get an overview of what the status was of any given project being worked on. Some teams were 
+                                        using ADO, or Microsoft Project, or even tracking it via Microsoft Power Point and Excel. Getting a status involved messaging the team involved 
+                                        and going down the ladder until you were able to get an answer.
+                                    </p>
+                                    <p> 
+                                        These projects are tracked and statuses gathered for use during an Monthly Business 
+                                        Review (MBR). Without a single source, Business Managers were forced to spend significant amounts of time tracking the statuses and getting it ready 
+                                        for the MBR.
+                                        <br>
+                                        Project Exodus would solve this problem by migrating all of the data for all the work the organization does to a single source: Pathfinder. To be 
+                                        successful, I would need to perform the following:
+                                            <ol>
+                                                <li>Identify all of the projects, where they live, and find all the data related to the project.</li>
+                                                <li>Keep track of the list of projects and update any new ones that get created during the project.</li>
+                                                <li>Gather org requirements and manage their implementation into the Pathfinder app.</li>
+                                                <li>Coordinate testing and validation of implemented requirements.</li>
+                                                <li>Communicate and train stakeholders in the use of Pathfinder.</li>
+                                                <li>Perform the physical migration and move all of the data.</li>
+                                                <li>Verify and test to ensure all of the data was uploaded successfuly.</li>
+                                                <li>Control and monitor the app for bugs and identify any ways it can be improved.</li>
+                                            </ol>
+                                    </p>
+                                    <p>
+                                        Project Exodus required knowing what types of work were we going to track in Pathfinder. To do this, I identified stakeholders and gathered 
+                                        and met with leadership to figure this out and the result were fairly simple:
+                                        <br>
+                                            <ul>
+                                                <li>If it's a Microsoft led effort by FTE's whether a project or run-state, it's in Pathfinder</li>
+                                                <li>If it's a v-team (vendor team) initiative being run by an FTE or otherwise not Microsot led, it's not in Pathfinder</li>
+                                            </ul>
+                                        Next, I met with reprentatives of the teams and those running projects to identify which of their projects conform to the new standards 
+                                        and which ones can stay wherever it was being managed. The deliverable from the step was the Exodus Project List. It was a living document 
+                                        that everybody had access to. Stakeholders would update the list with projects completed or any new projects that were created or started 
+                                        during Project Exodus.
+                                    </p>
+                                    <p>
+                                        During this team, I had met with the org leadership to identify what were the requirements needed from the app to house their project data. My 
+                                        task here was to take this list to the developers of Pathfinder, track their implementation, and test it to ensure it complies. This process 
+                                        was slow as the org has very specific requirements that was tricky to implement. During this time I updated leadership on a weekly basis to 
+                                        ensure visibility into the progress.
+                                    </p>
+                                    <p>
+                                        Once implementation was complete, I created and maintained a Standard Operating Procedure (SOP) to aid in training. At the same time, I initiated the 
+                                        migration of the projects from their sources and into Pathfinder. Once I verified that the migration was a success, I held Pathfinder training 
+                                        as well as open office hours for continuous support.
+                                    </p>
+                                    <div style="text-align: center;">
+                                        <ul class="list-inline">
+                                            <li>Date: August 2020 to March 2021</li>
+                                            <li>Client: Microsoft</li>
+                                            <li>Category: Business</li>
+                                        </ul>
+                                        <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fas fa-times mr-1"></i>Close Project</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -394,7 +521,7 @@
                                     <!-- Project Details Go Here-->
                                     <h2 class="text-uppercase">NHO Playbook</h2>
                                     <p class="item-intro text-muted">The one-stop-shop for all things NHO!</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/amazon nho.jpg" alt="" />
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/insidemodalimage/NHO Playbook/amazonnowhiring.jpg" alt="" />
                                     <p>
                                         The NHO Playbook is a SharePoint Site Collection containing all of the information, processes, 
                                         procedures, and templates used by Amazon during the New Hire Orientation event. It's purpose 
@@ -426,24 +553,25 @@
                                         <br><br>
                                         <div style="text-align: left;">
                                             <p>Landing page</p>
-                                            <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/MainPageIcons.PNG">
+                                            <img class="img-fluid d-block mx-auto" src="assets/img/insidemodalimage/NHO Playbook/MainPageIcons.PNG">
                                             <p>Categories</p>
-                                            <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/NHO Info.PNG">
+                                            <img class="img-fluid d-block mx-auto" src="assets/img/insidemodalimage/NHO Playbook/NHO Info.PNG">
                                             <p>Local sites page</p>
-                                            <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/Localsites.PNG">
+                                            <img class="img-fluid d-block mx-auto" src="assets/img/insidemodalimage/NHO Playbook/Localsites.PNG">
                                             <p>Example page of information</p>
-                                            <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/NHOFacilitation.PNG">
+                                            <img class="img-fluid d-block mx-auto" src="assets/img/insidemodalimage/NHO Playbook/NHOFacilitation.PNG">
                                             <p>First landing page</p>
-                                            <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/First landing page.png">
+                                            <img class="img-fluid d-block mx-auto" src="assets/img/insidemodalimage/NHO Playbook/First landing page.png">
                                         </div>
                                     </p>
-
-                                    <ul class="list-inline">
-                                        <li>Date: September 2019 to February 2020</li>
-                                        <li>Client: Amazon</li>
-                                        <li>Category: Tech</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fas fa-times mr-1"></i>Close Project</button>
+                                    <div style="text-align: center;">
+                                        <ul class="list-inline">
+                                            <li>Date: September 2019 to February 2020</li>
+                                            <li>Client: Amazon</li>
+                                            <li>Category: Tech</li>
+                                        </ul>
+                                        <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fas fa-times mr-1"></i>Close Project</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -463,7 +591,7 @@
                                     <!-- Project Details Go Here-->
                                     <h2 class="text-uppercase">Delridge Community Center</h2>
                                     <p class="item-intro text-muted">Teaching our youth to code and lead!</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/employee-training-program-featured.png" alt="" />
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/insidemodalimage/Delridge/Delridge Community Center.jpg" alt="" />
                                     <p>
                                         This training program was for refugee children that was running alongside other 
                                         programs at the Delridge Community Center. I built this program and designed it 
@@ -496,12 +624,14 @@
                                         At he end of the program, I interviewed each student to acquire data about the 
                                         project with the goal of improving the program for future cohorts.
                                     </p>
-                                    <ul class="list-inline">
-                                        <li>Date: October to November 2018</li>
-                                        <li>Client: Computing Kids</li>
-                                        <li>Category: Education</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fas fa-times mr-1"></i>Close Project</button>
+                                    <div style="text-align: center;">
+                                        <ul class="list-inline">
+                                            <li>Date: October to November 2018</li>
+                                            <li>Client: Computing Kids</li>
+                                            <li>Category: Education</li>
+                                        </ul>
+                                        <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fas fa-times mr-1"></i>Close Project</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -521,7 +651,7 @@
                                     <!-- Project Details Go Here-->
                                     <h2 class="text-uppercase">2019 Computer Science Internship</h2>
                                     <p class="item-intro text-muted">In partnership with University of Washington - Bothell</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/comp-sci.jpg" alt="" />
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/insidemodalimage/Computing Kids/internship.jpg" alt="" />
                                     <p>
                                         The 2019 Computer Science Internship was working with the University of Washington - 
                                         Bothell's Masters of Computer Science program. Students participating in our internship 
@@ -535,12 +665,14 @@
                                         I was also put in charge of the research and acquisition of a suitable workspace that fit both 
                                         the company budget as well as the needs of the team.
                                     </p>
-                                    <ul class="list-inline">
-                                        <li>Date: June 2019</li>
-                                        <li>Client: Computing Kids</li>
-                                        <li>Category: Education</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fas fa-times mr-1"></i>Close Project</button>
+                                    <div style="text-align: center;">
+                                        <ul class="list-inline">
+                                            <li>Date: June 2019</li>
+                                            <li>Client: Computing Kids</li>
+                                            <li>Category: Education</li>
+                                        </ul>
+                                        <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fas fa-times mr-1"></i>Close Project</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -560,7 +692,7 @@
                                     <!-- Project Details Go Here-->
                                     <h2 class="text-uppercase">CK Employee Website</h2>
                                     <p class="item-intro text-muted">A more efficient and simple solution.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/ckwebsite.jpg" alt="" />
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/insidemodalimage/Computing Kids/ckemployeelogin.jpg" alt="" />
                                     <p>My role when first hired by this company was to be the Teacher Supervisor. I was to interview, manage, 
                                         mentor, and train teachers who go to schools in the Greater Seattle area to teach kids how to code. <br><br>
 
@@ -570,7 +702,7 @@
                                         anything other than the time sheets. I was also privy to many conversations with administrators about how 
                                         frustrated they were about the site. <br><br>
 
-                                        <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/Teacher View Mock Up.PNG" alt="" />
+                                        <img class="img-fluid d-block mx-auto" src="assets/img/insidemodalimage/Computing Kids/Teacher View Mock Up.PNG" alt="" />
                                         After conducting many interviews with users and other stakeholders, I crafted an organized and well thought out 
                                         plan complete with a design (above) to pitch to the owner of the company. My project was authorized soon after. <br><br>
 
@@ -580,7 +712,7 @@
                                         take this test to complete the three tasks as I timed it. This would provide me a starting metric to test to verify 
                                         project success. <br><br>
 
-                                        <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/CKpopulatedcalendar.jpg" alt="" />
+                                        <img class="img-fluid d-block mx-auto" src="assets/img/insidemodalimage/Computing Kids/CKpopulatedcalendar.jpg" alt="" />
                                         I created all of the Epics, User Stories, and tasks using Azure DevOps (ADO). For teachers, I changed their 
                                         landing page to be a calendar. The calendar would then populate with that specific 
                                         teachers classes for the month. Teachers could click onto that specific class to get more information. Whichever 
@@ -598,12 +730,14 @@
                                         showed an huge decrease in time required to complete tasks.
 
                                     </p>
-                                    <ul class="list-inline">
-                                        <li>Date: July 2018</li>
-                                        <li>Client: Computing Kids</li>
-                                        <li>Category: Tech</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fas fa-times mr-1"></i>Close Project</button>
+                                    <div style="text-align: center;">
+                                        <ul class="list-inline">
+                                            <li>Date: July 2018</li>
+                                            <li>Client: Computing Kids</li>
+                                            <li>Category: Tech</li>
+                                        </ul>
+                                        <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fas fa-times mr-1"></i>Close Project</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -623,7 +757,7 @@
                                     <!-- Project Details Go Here-->
                                     <h2 class="text-uppercase">Onsite Calibration Technican Training Program</h2>
                                     <p class="item-intro text-muted">A "how-to" BC guide for new hires!</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/biomedical.jpg" alt="" />
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/logos/bcgrouplogo.png" alt="" />
                                     <p>
                                         <b>Due to a signed agreement, I am unable to provide any pictures or screenshots of this proejct.</b><br><br>
 
@@ -655,12 +789,14 @@
                                         could take a van and begin working as an Onsite Calibration Technician. A trainee was hired on and used my training 
                                         guide and was able to complete everything and get on the road within three months, a 50% decrease.
                                     </p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2013</li>
-                                        <li>Client: BC Group International</li>
-                                        <li>Category: Tech</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fas fa-times mr-1"></i>Close Project</button>
+                                    <div style="text-align: center;">
+                                        <ul class="list-inline">
+                                            <li>Date: January 2013</li>
+                                            <li>Client: BC Group International</li>
+                                            <li>Category: Tech</li>
+                                        </ul>
+                                        <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fas fa-times mr-1"></i>Close Project</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -680,7 +816,7 @@
                                     <!-- Project Details Go Here-->
                                     <h2 class="text-uppercase">Global Broadcast Service (GBS) Antenna Replacement</h2>
                                     <p class="item-intro text-muted">Installation and testing of a new GRC-211 antenna</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/uss enterprise.jpg" alt="" />
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/insidemodalimage/Navy/gbsantennaremoval.jpg" alt="" />
                                     <p>
                                         As the senior technician for my division onboard the USS Enterprise as well as one of the few techs 
                                         onboard who was knowledgable and qualified to work on the GBS system, I played a critical role in the 
@@ -698,12 +834,14 @@
                                         After installation, I lead the team and worked with contractors to test the system and ensure everything was installed 
                                         correctly and that the entire system was functioning as it should.
                                     </p>
-                                    <ul class="list-inline">
-                                        <li>Date: February 2015</li>
-                                        <li>Client: United States Navy</li>
-                                        <li>Category: Military</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fas fa-times mr-1"></i>Close Project</button>
+                                    <div style="text-align: center;">
+                                        <ul class="list-inline">
+                                            <li>Date: February 2015</li>
+                                            <li>Client: United States Navy</li>
+                                            <li>Category: Military</li>
+                                        </ul>
+                                        <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fas fa-times mr-1"></i>Close Project</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
